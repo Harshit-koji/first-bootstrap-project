@@ -1,0 +1,402 @@
+/*todo base rule  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist" ,  sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--bs-dark-color);
+}
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+p{
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--bs-dark-color);
+  letter-spacing: 0.07rem;
+  line-height: 1.55rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+button,a{
+  font-size: 1.15rem !important;
+  letter-spacing: 0.2rem;
+  word-spacing: .1rem;
+}
+
+
+/*todo theme */
+:root{
+  --bs-dark-color:#262829;
+  --bs-dark-primary:#1c1c1c;
+  --bs-main-color:#fff;
+  --bs-primary-color:#c6c6c6;
+  --bs-secondary-colors: #29a9fd;
+--bs-supporting-color:#C850C0;
+--bs-grey-color:#00000080;
+}
+/*todo layout */
+/*todo module / reusable  */
+.common-heading{
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem !important;
+}
+.common-title{
+  margin-bottom: 4.2rem;
+}
+.common-section{
+  padding-bottom: 9rem;
+}
+.bg-theme{
+  color: var(--bs-supporting-color);
+  background-color: none !important;
+}
+/*todo states  */
+/*****?  Start Navbar Section  *****/
+.navbar-brand{
+  color: var(--bs-main-color) !important;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.1rem;
+    width: 0%;
+    border-bottom: 0.2rem solid var(--bs-secondary-colors);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  &:hover:after{
+    width: 100%;
+    }
+    &:hover{
+      color: var(--bs-secondary-colors) !important;
+    
+    }
+}
+.nav-link{
+  color: var(--bs-main-color) !important;
+  font-weight: bold;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.3rem;
+    width: 0%;
+    border-bottom: 0.2rem solid var(--bs-secondary-colors);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+    &:hover:after{
+      width: 90%;
+      }
+      &:hover{
+        color: var(--bs-secondary-colors) !important;
+      
+      }
+}
+
+  /*****!  End Navbar Section  *****/
+
+/*****?  Start HeRo Section  *****/
+.hero-section .container{
+display: grid;
+place-content: center;
+height: inherit;
+
+
+}
+.bg-main{
+  height: 80vh;
+  position: relative;
+}
+.bg-color{
+  background-color: var(--bs-dark-primary);
+}
+.text-light-grey{
+  color: var(--bs-primary-color);
+}
+.hero-video--section{
+  width: 30rem;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+/** Start shape divider  Section  */
+.custom-shape-divider-bottom-1715507455 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+ 
+}
+
+.custom-shape-divider-bottom-1715507455 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  
+}
+
+.custom-shape-divider-bottom-1715507455 .shape-fill {
+
+  fill: var(--bs-secondary-colors);
+}
+/** End  shape divider Section  */
+
+ /*****!  End HeRo Section  *****/
+/*****?  Start Services Section  *****/
+.service-section{
+  padding: 2.5rem 0 3rem 0 !important;
+}
+.icon-span{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--bs-secondary-colors);
+  color: var(--bs-main-color);
+}
+.card-box:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+  /*****!  End Services Section  *****/
+/*****?  Start More Info Section  *****/
+.more-info--section{
+  background-image: linear-gradient(rgba(22,22,22,0.7), rgba(22,22,22,0.9)), url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+padding: 6rem 0;
+overflow:hidden;
+}
+.img-section img{
+  width: 70%;
+}
+  /*****!  End  More Info  Section  *****/
+/*****?  Start online  Section  *****/
+.business-section{
+  margin-top: 3rem ;
+}
+  /*****!  End online Section  *****/
+/*****?  Start  Testimonial   Section  *****/
+/** Start carousel  Section  */
+.carousel .card{
+  background-color: #262631;
+  color: var(--bs-main-color);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.carousel-inner .card p{
+color: var(--bs-main-color);
+}
+.carousel-inner .card:hover p{
+color: var(--bs-dark-color);
+}
+.carousel-inner .card:hover{
+  background-color: var(--bs-main-color);
+  color: var(--bs-dark-color);
+}
+.carousel-inner .fa-star{
+  color: var(--bs-supporting-color);
+}
+.carousel-indicators {
+  bottom: -20%;
+}
+.carousel-indicators [data-bs-target]{
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--bs-secondary-colors);
+}
+/** End  carousel Section  */
+  /*****!  End  Testimonial  Section  *****/
+/*****?  Start Expert pannel Section  *****/
+.text-grey{
+  color: var(--bs-primary-color);
+}
+.text-light-grey{
+  color: var(--bs-primary-color);
+}
+  /*****!  End Expert pannel Section  *****/
+/*****?  Start contact Section  *****/
+.contact-section{
+  position: relative;
+}
+.custom-shape-divider-top-1715526242 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1715526242 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1715526242 .shape-fill {
+  fill: var(--bs-secondary-colors);
+}
+.contact-section .common-title{
+  padding-top: 2rem;
+}
+.contact-section .form-section{
+  width: 50%;
+}
+  /*****!  End contact Section  *****/
+/*****?  Start footer  Section  *****/
+.main-footer--section{
+  padding-bottom: 4rem;
+  color: var(--bs-main-color);
+}
+.contact-div{
+  background-color: var(--bs-dark-color);
+}
+.main-footer--section .icon-div{
+  width: 5rem;
+  height: 5rem;
+}
+  /*****!  End  footer Section  *****/
+/*****?  Start media querrys Section  *****/
+
+
+@media screen and (max-width: 1200px) {
+  .hero-video--section{
+    width: 25rem;
+  }
+  h1{
+    font-size: 3rem;
+  
+  }
+  h2{
+    font-size: 2.2rem;
+    line-height:3.5rem;
+  
+  }
+  section .common-heading{
+    font-size: 3.5rem;
+  }
+  section .para-width{
+    width: auto;
+  }
+  .hero-section{
+    height: 100vh;
+  }  
+  
+}
+
+
+
+
+@media screen and (max-width: 998px) {
+  .navbar-toggler{
+    border-color: var(--bs-secondary-colors);
+  }
+.navbar-toggler-icon{
+  background-color: var(--bs-secondary-colors);
+}
+  .nav-link:hover::after{
+width: 0;    
+}
+h1{
+  font-size: 2.4rem;
+
+}
+h2{
+  font-size: 1.9rem;
+  line-height:2.55rem;
+
+}
+section .common-heading{
+  font-size: 2rem;
+}
+section .para-width{
+  width: auto;
+}
+.hero-section{
+  height: 100vh;
+}
+.hero-video--section{
+  width: 20rem;
+}
+.more-info--section{
+  text-align: center;
+
+}
+
+.carousel-indicators {
+  bottom: -6%;
+}  
+.business-section .container{
+  & p{
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+   }
+}
+  /*****!  End media querrys Section  *****/
+  
+  /* ****?  Start  Scrollbar  Section  *****/
+/* todo width  */
+::-webkit-scrollbar{
+  width: 1rem;
+
+
+}
+
+/*todo track  */
+::-webkit-scrollbar-track{
+  background: black;
+}
+
+/*todo handle */
+::-webkit-scrollbar-thumb{
+  background: var(--bs-secondary-colors);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+/* height: 10rem; */
+}
+
+/*todo Handle on hover  */
+/* ::-webkit-scrollbar-thumb:hover{
+  background: var(--bs-main-color);
+} */
+  /*****!  End Scrollbar Section  **** */
